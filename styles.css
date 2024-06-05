@@ -1,0 +1,537 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Global Styles */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Hero Section */
+/* Hero Section */
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #007bff;
+    color: #fff;
+    border-radius: 0cap;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background: #000; /* Dark black background */
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.hero-logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.hero-nav {
+    flex: 1;
+}
+
+.hero-nav .top-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-nav .top-links li {
+    margin: 0 15px;
+}
+
+.hero-nav .top-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.hero-nav .top-links a:hover {
+    color: #007bff;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.hero-buttons .sign-up,
+.hero-buttons .talk-to-us {
+    background: #555; /* Grey background */
+}
+
+.hero-buttons .sign-up:hover,
+.hero-buttons .talk-to-us:hover {
+    background: #777; /* Lighter grey on hover */
+}
+
+#hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #bbb; /* Light grey color */
+    animation: fadeInUp 1s ease-out;
+}
+
+#hero button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+#hero button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Key Problems Solved Section */
+#problems-solved {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+#problems-solved h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+#problems-solved .problem-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#problems-solved .card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#problems-solved .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#problems-solved .card i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#problems-solved .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Carousel Section */
+.center-heading {
+    text-align: center;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+
+/* Accordion Section */
+#accordion {
+    background: #f8f9fa;
+    padding: 80px 0; /* Increased padding to increase the size */
+}
+
+#accordion .container {
+    max-width: 1200px; /* Set max-width to center content */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#accordion h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 2.5em; /* Increased font size */
+}
+
+.accordion-item {
+    margin-bottom: 30px; /* Increased space between accordion items */
+}
+
+.accordion-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.accordion-content p {
+    color: #333; /* Adjusted font color */
+    font-size: 1.1em; /* Increased font size */
+    line-height: 1.6;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/* Reviews Section */
+#reviews {
+    background: #0a0a0a;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#reviews .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#reviews h2 {
+    margin-bottom: 50px;
+    color: #f6ecec;
+    font-size: 2.5em;
+}
+
+.review {
+    margin-bottom: 40px;
+}
+
+.reviewer-info {
+    margin-bottom: 20px;
+}
+
+.reviewer-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #cd8f8f;
+}
+
+.review-text {
+    font-size: 1.2em;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+/* Call to Action Section */
+#cta {
+    background: linear-gradient(rgba(193, 87, 87, 0.7), rgba(0, 0, 0, 0.7)), url('cta-background.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 120px 0; /* Increased padding to increase the size */
+    text-align: center;
+    position: relative; /* Added position relative */
+}
+
+#cta .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#cta h2 {
+    margin-bottom: 30px;
+    font-size: 3em; /* Increased font size */
+    opacity: 1; /* Ensure the heading is visible */
+    transform: translateY(0); /* Ensure the heading is in the correct position */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and transform */
+}
+
+#cta p {
+    margin-bottom: 40px;
+    font-size: 1.3em; /* Increased font size */
+    font-family: inherit;
+    opacity: 1; /* Ensure the paragraph is visible */
+    transform: translateY(0); /* Ensure the paragraph is in the correct position */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and transform */
+}
+
+.cta-button {
+    padding: 20px 40px; /* Increased padding */
+    font-size: 1.5em; /* Increased font size */
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Added transition for hover */
+    transform: translateY(0); /* Ensure the button is in the correct position */
+    opacity: 1; /* Ensure the button is visible */
+}
+
+#cta:hover .cta-button {
+    transform: translateY(0); /* Move the button up on hover */
+    opacity: 1; /* Show the button on hover */
+}
+
+.cta-button:hover {
+    background: green;
+    transform: scale(1.05);
+}
+
+/* Animation for CTA Section */
+#cta.animate h2, #cta.animate p, #cta.animate .cta-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer Section */
+#footer {
+    background: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 60px 0;
+    width: 100%; /* Make footer full width */
+    position: relative;
+}
+
+#footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Copyright Footer */
+#footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#footer .footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer .footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#footer .footer-links li:last-child {
+    margin-right: 0;
+}
